@@ -149,3 +149,34 @@ function inicializarMapaFullscreen() {
 }
 
 inicializarMapaFullscreen();
+
+// Scroll suave para links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const href = link.getAttribute('href');
+    const destino = document.querySelector(href);
+    if (!destino) return;
+
+    e.preventDefault();
+
+    const headerAltura = document.querySelector('header').offsetHeight;
+    const topo = destino.getBoundingClientRect().top + window.scrollY - headerAltura;
+    const inicio = window.scrollY;
+    const distancia = topo - inicio;
+    const duracao = 800; // ms
+    let startTime = null;
+
+    function easeInOut(t) {
+      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+    }
+
+    function animar(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const progresso = Math.min((timestamp - startTime) / duracao, 1);
+      window.scrollTo(0, inicio + distancia * easeInOut(progresso));
+      if (progresso < 1) requestAnimationFrame(animar);
+    }
+
+    requestAnimationFrame(animar);
+  });
+});
