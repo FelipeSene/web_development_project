@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Hollow Knight</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Felipe Sene Souza">
+  <meta name="description" content="Site sobre o jogo Hollow Knight - história, amuletos, personagens, mapa, músicas e vídeo.">
+  <link rel="shortcut icon" href="img/icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="topo">
+    <div class="cabecalho">
+
+      <a href="#" class="logo">
+        <img src="img/logo.png" alt="Logo Hollow Knight">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu-principal" id="menuPrincipal" aria-label="Navegação principal">
+        <ul>
+          <li class="menu-item">
+            <a href="#inicio">Sobre</a>
+            <ul class="submenu">
+              <li><a href="#historia">História</a></li>
+              <li><a href="#amuletos">Amuletos</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#personagens">Jogo</a>
+            <ul class="submenu">
+              <li><a href="#personagens">Personagens</a></li>
+              <li><a href="#mapa">Mapa</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#musicas">Gameplay</a>
+            <ul class="submenu">
+              <li><a href="#musicas">Músicas</a></li>
+              <li><a href="#video">Vídeo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+
+    <!-- SEÇÃO 1 - BOAS-VINDAS -->
+    <section class="secao secao--inicio" id="inicio">
+      <div class="container">
+
+        <h1 class="titulo-principal">Seja bem-vindo!</h1>
+        <p class="subtitulo">O jogo escolhido para ser o tema do site foi o HOLLOW KNIGHT...</p>
+        <hr class="divisor-claro">
+
+        <div class="grid-dois-col">
+          <div class="card-info">
+            <h2 class="card-titulo">Sobre o jogo:</h2>
+            <div class="card-corpo">
+              <p>Hollow Knight é um jogo indie de exploração e aventura do gênero metroidvania, com animação no estilo 2D.</p>
+              <p>Nesse jogo um cavaleiro sem nome explora um vasto mundo habitado por insetos, passando por cavernas, cidades antigas e ermos mortais.</p>
+              <p>Lute contra diversas criaturas malignas, alie-se a insetos bizarros e tente solucionar um antigo mistério que ronda o centro do reino.</p>
+            </div>
+          </div>
+
+          <hr class="divisor-vertical" aria-hidden="true">
+
+          <div class="card-info">
+            <h2 class="card-titulo">Especificações:</h2>
+            <div class="card-corpo">
+              <ul class="lista-specs">
+                <li>Gênero: Ação, Aventura, Indie.</li>
+                <li>Desenvolvedor: Team Cherry.</li>
+                <li>Lançamento: 24 de fevereiro de 2017.</li>
+                <li>Plataformas: PS4, Nintendo Switch, Xbox One, macOS, Linux, Windows.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2 - HISTÓRIA -->
+    <section class="secao secao--historia" id="historia">
+      <div class="container">
+
+        <h2 class="titulo-secao">História:</h2>
+        <div class="grid-texto-imagem">
+          <div class="texto-bloco">
+            <p>O mundo de Hollow Knight é habitado por insetos que viviam em uma cidade subterrânea, até que uma contaminação enlouqueceu as criaturas. O Hollow Knight, personagem principal que carrega o nome do jogo, é um receptáculo criado para combater essa infecção. No entanto, após tantos anos e ciclos, não sobrou muito o que salvar. O mundo já está em ruínas sendo possível encontrar registros dessa civilização.</p>
+            <p>O enredo é tão profundo quanto o mapa e, caso o jogador se interesse, é possível ir atrás de cada figura importante e descobrir o que aconteceu, como o "Rei Pálido" e a "Dama Branca". Boa parte da história é contada de forma sutil ou indireta, para que o por conta própria ligue os pontos, ou melhor, teça os fios.</p>
+          </div>
+          <div class="imagem-bloco">
+            <img src="img/hollow.jpg" alt="Arte do Hollow Knight">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3 - AMULETOS -->
+    <section class="secao secao--amuletos" id="amuletos">
+      <div class="container">
+
+        <div class="grid-lateral">
+          <div class="grid-lateral__texto">
+            <h2 class="titulo-secao">Amuletos:</h2>
+            <p>Eles são itens especiais encontrados durante a aventura, que conferem bônus ao Cavaleiro ao serem equipados no menu de encaixes.</p>
+            <p>Uma parte interessante é que seus efeitos são acumulativos e interagem entre si. O jogador pode experimentar diversas combinações e construir suas <em>builds</em>, mas é preciso planejar, pois cada amuleto ocupa um determinado espaço.</p>
+          </div>
+
+          <div class="carousel" id="carouselAmuletos" data-total="6">
+            <div class="carousel__track">
+              <img src="img/2.jpg" alt="Amuleto 1">
+              <img src="img/3.jpg" alt="Amuleto 2">
+              <img src="img/4.jpg" alt="Amuleto 3">
+              <img src="img/5.jpg" alt="Amuleto 4">
+              <img src="img/6.jpg" alt="Amuleto 5">
+              <img src="img/7.jpg" alt="Amuleto 6">
+            </div>
+            <div class="carousel__dots" aria-label="Navegação do slider"></div>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8249;</button>
+            <button class="carousel__btn carousel__btn--next" aria-label="Próximo">&#8250;</button>
+          </div>
+        </div>
+
+        <div class="card-encaixes">
+          <h3 class="card-encaixes__titulo">Encaixes:</h3>
+          <p>Eles são os espaços necessários para se equipar os Amuletos. Diferentes amuletos exigem uma quantidade diferente de encaixes livres. O jogador começa com 3 encaixes, e com o decorrer do jogo outros podem ser encontrados em lugares escondidos ou comprando de outros insetos.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4 - PERSONAGENS -->
+    <section class="secao secao--personagens" id="personagens">
+      <div class="container">
+
+        <h2 class="titulo-secao">Personagens:</h2>
+        <div class="grid-slider-texto">
+
+          <div class="carousel" id="carouselPersonagens" data-total="10">
+            <div class="carousel__track">
+              <img src="img/8.jpg"  alt="Personagem 1">
+              <img src="img/9.jpg"  alt="Personagem 2">
+              <img src="img/10.jpg" alt="Personagem 3">
+              <img src="img/11.jpg" alt="Personagem 4">
+              <img src="img/12.jpg" alt="Personagem 5">
+              <img src="img/13.jpg" alt="Personagem 6">
+              <img src="img/14.jpg" alt="Personagem 7">
+              <img src="img/15.jpg" alt="Personagem 8">
+              <img src="img/16.jpg" alt="Personagem 9">
+              <img src="img/17.jpg" alt="Personagem 10">
+            </div>
+            <div class="carousel__dots" aria-label="Navegação do slider"></div>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8249;</button>
+            <button class="carousel__btn carousel__btn--next" aria-label="Próximo">&#8250;</button>
+          </div>
+
+          <div class="texto-bloco">
+            <h3 class="subtitulo-secao">Bosses:</h3>
+            <p>Também há diversos bosses espalhados pelo mapa. Os chefes são inimigos únicos em Hollow Knight, que normalmente têm mais vida ou causam mais dano que os inimigos comuns da mesma área - muitas vezes mal é possível perceber que uma batalha se aproxima.</p>
+            <p>O jogador pode ter que derrotar um Chefe para acessar uma nova área, adquirir um item, completar uma missão ou simplesmente avançar a história do jogo.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5 - MAPA -->
+    <section class="secao secao--mapa" id="mapa">
+      <div class="container">
+
+        <h2 class="titulo-secao">Mapas:</h2>
+        <div class="grid-texto-imagem">
+          <div class="texto-bloco">
+            <h3 class="subtitulo-secao">Dirtmouth</h3>
+            <p>É um pequeno vilarejo situado sobre a maior parte de Hallownest, encontrado no começo do jogo. É onde o jogador pode, pela primeira vez, entrar em Hallownest propriamente.</p>
+            <p>Continuando no jogo você pode passar pelo Abismo, Cidade das Lágrimas, Coliseu dos Tolos, Ninho Profundo, Encruzilhada Esquecida, Ermos Fúngicos, Caminho Verde e muitos outros.</p>
+          </div>
+          <div class="imagem-bloco imagem-bloco--zoom">
+            <img src="img/mapa.jpg" alt="Mapa completo de Hallownest">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 6 - MÚSICAS -->
+    <section class="secao secao--musicas" id="musicas">
+      <div class="container">
+
+        <h2 class="titulo-secao">Músicas:</h2>
+        <div class="grid-musicas">
+          <div class="grid-audio">
+            <div class="card-audio">
+              <p class="card-audio__titulo">Battle - Hornet:</p>
+              <audio controls>
+                <source src="musica/hornet.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="card-audio">
+              <p class="card-audio__titulo">Dirtmouth:</p>
+              <audio controls>
+                <source src="musica/dirtmouth.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="card-audio">
+              <p class="card-audio__titulo">Hallownest:</p>
+              <audio controls>
+                <source src="musica/hallownest.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="card-audio">
+              <p class="card-audio__titulo">Battle - Mantis Lords:</p>
+              <audio controls>
+                <source src="musica/mantislords.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+          <div class="gif-lateral">
+            <img src="img/nailmaster.gif" alt="Animação Nailmaster">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 7 - VÍDEO -->
+    <section class="secao secao--video" id="video">
+      <div class="container">
+
+        <div class="grid-video">
+          <div class="video-wrapper">
+            <video controls>
+              <source src="video/HollowKnightt.mp4" type="video/mp4">
+            </video>
+            <p class="video-legenda">Hollow Knight: Voidheart Edition - Announce and Gameplay Trailer | PS4</p>
+          </div>
+
+          <div class="requisitos">
+            <h3 class="requisitos__titulo">Requisitos mínimos:</h3>
+            <ul class="requisitos__lista">
+              <li>SO: Windows 7 (64bit)</li>
+              <li>Processador: Intel Core 2 Duo E5200</li>
+              <li>Memória: 4 GB de RAM</li>
+              <li>Placa de vídeo: GeForce 9800GTX+ (1GB)</li>
+              <li>DirectX: Versão 10</li>
+              <li>Armazenamento: 9 GB</li>
+              <li>Resolução recomendada: 1080p, 16:9</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>©Copyright 2026 - Felipe Sene</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
