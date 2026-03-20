@@ -158,6 +158,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     if (!destino) return;
 
     e.preventDefault();
+    menuPrincipal.classList.remove('aberto');
+    menuToggle.setAttribute('aria-expanded', 'false');
+
+    // Remove o hover do menu
+    link.blur();
+    document.activeElement.blur();
 
     const headerAltura = document.querySelector('header').offsetHeight;
     const topo = destino.getBoundingClientRect().top + window.scrollY - headerAltura;
