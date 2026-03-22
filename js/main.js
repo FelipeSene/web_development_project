@@ -169,7 +169,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     const topo = destino.getBoundingClientRect().top + window.scrollY - headerAltura;
     const inicio = window.scrollY;
     const distancia = topo - inicio;
-    const duracao = 800; // ms
+    const duracao = 700;
     let startTime = null;
 
     function easeInOut(t) {

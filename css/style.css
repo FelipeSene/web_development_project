@@ -53,7 +53,7 @@ html {
 }
 
 body {
-  background-color: var(--c-inicio-bg);
+  background-color: #000000e1;
   font-family: var(--font);
   color: var(--c-texto);
   overflow-x: hidden;
@@ -461,9 +461,9 @@ section[id] {
 .carousel__track img {
   min-width: 100%;
   aspect-ratio: 16 / 10;
-  object-fit: contain;        /* mostra a imagem inteira, sem corte */
-  background-color: #000;     /* fundo preto nas áreas sem imagem */
-  border-radius: var(--r-md);
+  object-fit: contain;
+  background-color: #000;
+  border-radius: 20px, 20px, 0px, 0px;
   user-select: none;
 }
 
@@ -581,9 +581,28 @@ section[id] {
 }
 
 /* -- VÍDEO (Seção 7) -- */
-.video-wrapper video {
-  width: 100%;
+.video-thumb {
+  display: block;
+  position: relative;
   border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.video-thumb img {
+  width: 100%;
+  display: block;
+}
+
+.video-thumb__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50%;
 }
 
 .video-legenda {
