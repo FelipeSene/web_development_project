@@ -1,4 +1,3 @@
-
 // MENU HAMBÚRGUER
 
 const menuToggle    = document.getElementById('menuToggle');
@@ -29,9 +28,7 @@ if (menuToggle && menuPrincipal) {
   });
 }
 
-//
 // CARROSSEL
-//
 
 function inicializarCarousel(id) {
   const carousel = document.getElementById(id);
